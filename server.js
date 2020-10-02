@@ -9,13 +9,6 @@ app.use(express.json());
 
 //ininciando o db
 
-//connecetionString: process.env.MONGO_DB;
-
-
-
-
-//MONGO_DB="mongodb+srv://carpestiago:meucu2000@cluster0.uiaea.mongodb.net/ProjetoAngular?retryWrites=true&w=majority"
-
 mongoose.connect('mongodb+srv://carpestiago:12345@Cluster0.uiaea.mongodb.net/Cluster0?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 //boot()
