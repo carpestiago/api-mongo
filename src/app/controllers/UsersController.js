@@ -3,6 +3,13 @@ const Users = mongoose.model('Users');
 
 module.exports = {
 
+    //listar um único produto
+    async index(req, res) {
+        const users = await Users.find()
+
+        return res.json(users);
+    },
+
     //salvar um novo usuário
     async store(req, res) {
 
